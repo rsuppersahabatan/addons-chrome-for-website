@@ -1,0 +1,17 @@
+{
+    "name": "Chrome Extenstion",
+    "description": "Addons Chrome Extension for Website RSUP Persahabatan",
+    "version": "0.0.1",
+    "permissions": ["contextMenus","activeTab"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "homepage_url": "https://github.com/rsuppersahabatan/addons-chrome-for-website",
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.com/*","*://www.youtube.com/*","*://www.rsuppersahabatan.co.id/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "manifest_version": 2
+}
